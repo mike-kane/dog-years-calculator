@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_Years_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your dog's age in human years:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIa-Ak-Uda">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Roz-cY-hhR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6038.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="U6S-uL-ECx"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygV-xj-bMi">
+                                <color key="backgroundColor" red="0.19317235931453991" green="1" blue="0.92020682374793705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="2wQ-mW-FKi"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.080737943936210699" blue="0.95448990579960336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i89-Ii-yRd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gce-Nc-g2r">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RQO-KM-hVl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89113034822992654" green="1" blue="0.11011715126162813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ygV-xj-bMi" secondAttribute="bottom" constant="394" id="DXk-4w-kxZ"/>
+                            <constraint firstItem="jIa-Ak-Uda" firstAttribute="centerX" secondItem="gce-Nc-g2r" secondAttribute="centerX" id="G8c-0T-KAN"/>
+                            <constraint firstItem="gce-Nc-g2r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="58" id="UEY-td-DEf"/>
+                            <constraint firstItem="U6S-uL-ECx" firstAttribute="trailing" secondItem="ygV-xj-bMi" secondAttribute="trailing" id="VhI-nz-6QI"/>
+                            <constraint firstItem="jIa-Ak-Uda" firstAttribute="top" secondItem="U6S-uL-ECx" secondAttribute="bottom" constant="8" symbolic="YES" id="XZK-k0-fEU"/>
+                            <constraint firstItem="U6S-uL-ECx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="bNF-0a-AT2"/>
+                            <constraint firstItem="gce-Nc-g2r" firstAttribute="centerX" secondItem="ygV-xj-bMi" secondAttribute="centerX" id="bfl-5r-odO"/>
+                            <constraint firstItem="ygV-xj-bMi" firstAttribute="top" secondItem="gce-Nc-g2r" secondAttribute="bottom" constant="17" id="dl5-ws-hM0"/>
+                            <constraint firstItem="U6S-uL-ECx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fck-Ij-bXX"/>
+                            <constraint firstItem="U6S-uL-ECx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gll-wW-0CW"/>
+                            <constraint firstItem="gce-Nc-g2r" firstAttribute="top" secondItem="jIa-Ak-Uda" secondAttribute="bottom" constant="8" symbolic="YES" id="kbw-Gw-Agi"/>
+                            <constraint firstItem="U6S-uL-ECx" firstAttribute="leading" secondItem="ygV-xj-bMi" secondAttribute="leading" id="yHi-M5-eDY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dogAgeLabel" destination="jIa-Ak-Uda" id="Lh7-Bs-HML"/>
+                        <outlet property="dogImageView" destination="U6S-uL-ECx" id="xkw-qv-lhs"/>
+                        <outlet property="userInputTextField" destination="gce-Nc-g2r" id="gGd-s9-iGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_6038.JPG" width="3024" height="4032"/>
+    </resources>
+</document>
